@@ -4,13 +4,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(225, 224, 224);
+  background-color: rgba(225, 224, 224, 0.783);
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -29,12 +29,12 @@ body {
 }
 .navbar-lists li a {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 1rem;
   display: block;
 }
 .navbar-lists li:hover {
-  background-color: rgb(37, 202, 56);
+  background-color: rgb(32, 211, 95);
 }
 
 .toggle-button {
@@ -50,7 +50,7 @@ body {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   border-radius: 10px;
 }
 @media (max-width: 500px) {
