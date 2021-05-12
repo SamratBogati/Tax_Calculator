@@ -1,3 +1,4 @@
+/* CSS for Navigation Start */
 * {
   box-sizing: border-box;
 }
@@ -81,3 +82,122 @@ body {
     display: flex;
   }
 }
+/* CSS for Navigation End */
+
+/* CSS for body part Start */
+.home-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.info {
+  text-align: center;
+}
+.info h1 {
+  margin-bottom: 0px;
+}
+.info p {
+  margin-top: 0px;
+}
+.form-row {
+  background-color: #f0f0f0;
+  border: 1px solid #cfcfcf;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  display: grid;
+}
+div {
+  display: block;
+}
+.employee-status-box {
+  height: 30px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #000;
+  border-radius: 4px;
+}
+h2 {
+  font-size: 22px;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+.income-form-end {
+  border-top: 1px solid #25518c;
+  padding-top: 15px;
+}
+label {
+  font-weight: 700;
+}
+.form-row-2 {
+  float: left;
+  width: 50%;
+}
+@media (max-width: 978px) {
+  .form-row-2 {
+    float: left;
+  }
+}
+@media (max-width: 500px) {
+  .form-row-2 {
+    float: none;
+    width: 100%;
+  }
+}
+.form-row-2 input {
+  padding: 6px 12px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+  text-align: right;
+}
+
+/* Row 3 */
+.form-column-1 {
+  width: 50%;
+  float: left;
+}
+.form-column-1 button {
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+.form-column-1 .button-1 {
+  background-color: #f44336;
+  float: left;
+}
+.form-column-1 .button-2 {
+  background-color: #4caf50;
+  float: right;
+}
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group-total {
+  width: 80%;
+  border-top: 2px solid #000000;
+  padding-top: 15px;
+}
+.home-container label {
+  float: left;
+  margin: 5px 10px 0 0;
+  width: 100%;
+  max-width: 185px;
+}
+/* CSS for body part End */
+
+/* CSS for Footer start */
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #33383b;
+  color: #ffffff;
+}
+footer a {
+  color: #a9ceff;
+}
+/* CSS for Footer end */
