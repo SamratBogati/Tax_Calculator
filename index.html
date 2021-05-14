@@ -54,14 +54,14 @@
         </p>
       </div>
       <div class="tax-form">
-        <form>
+        <form id="tax_form">
           <div class="form-row">
             <div class="row">
               <div class="form-group">
                 <label class="status">Marital Status</label>
-                <select class="employee-status-box">
-                  <option value="1">Unmarried</option>
-                  <option value="0">Married</option>
+                <select class="employee-status-box" id="status">
+                  <option value="Married">Unmarried</option>
+                  <option value="Unmarried">Married</option>
                 </select>
               </div>
             </div>
@@ -73,19 +73,29 @@
                 <h2>Income</h2>
                 <div class="form-group">
                   <label for="monthly-salary">Monthly Salary</label>
-                  <input id="monthly-salary" type="number" min="1" required />
+                  <input
+                    id="monthly-salary"
+                    type="number"
+                    min="1"
+                    name="monthly-salary"
+                    required
+                  />
                 </div>
                 <div class="form-group">
                   <label for="months">No. of Months</label>
-                  <input id="months" type="number" min="1" required />
+                  <select id="months-id" class="months">
+                    <option value="yearly">Yearly</option>
+                    <option value="monthly">Monthly</option>
+                  </select>
+                  <!-- <input id="months" type="number" min="1" required /> -->
                 </div>
                 <div class="form-group">
-                  <label for="bonus">Festival Bonus</label>
+                  <label for="bonus">Monthly Bonus</label>
                   <input id="bonus" type="number" min="0" />
                 </div>
                 <div class="form-group-total">
                   <label for="total-salary">Total Salary</label>
-                  <input id="total-salary" type="number" />
+                  <input id="total-salary" type="number" min="0" />
                 </div>
               </div>
               <div class="form-row-2">
@@ -117,40 +127,31 @@
                 <button
                   type="submit"
                   class="button-2"
+                  id="submit"
                   value="Calculate"
                   data-modal-target="#modal"
                 >
                   Calculate
                 </button>
-                <div class="modal" id="modal">
-                  <div class="modal-header">
-                    <div class="title">Example Modal</div>
-                    <button data-close-button class="close-button">
-                      &times;
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Esse quod alias ut illo doloremque eum ipsum obcaecati
-                    distinctio debitis reiciendis quae quia soluta totam
-                    doloribus quos nesciunt necessitatibus, consectetur quisquam
-                    accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam,
-                    molestiae rem at ad autem dolor ex aperiam. Amet assumenda
-                    eos architecto, dolor placeat deserunt voluptatibus tenetur
-                    sint officiis perferendis atque! Voluptatem maxime eius eum
-                    dolorem dolor exercitationem quis iusto totam! Repudiandae
-                    nobis nesciunt sequi iure! Eligendi, eius libero. Ex,
-                    repellat sapiente!
-                  </div>
-                </div>
-                <div id="overlay"></div>
-                <!--  -->
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>Net Tax Liability (yearly):</label>
+                <input type="number" id="yearly-tax" />
+              </div>
+              <div class="form-group">
+                <label>Net Tax Liability (monthly):</label>
+                <input type="number" id="monthly-tax" />
               </div>
             </div>
           </div>
         </form>
       </div>
     </div>
+
     <!-- Home page of Sansar End -->
     <!-- Footer Start -->
     <footer>
