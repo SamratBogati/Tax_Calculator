@@ -113,7 +113,15 @@ div {
 }
 .employee-status-box {
   height: 30px;
-  padding: 6px 12px;
+  padding: 6px 55px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #000;
+  border-radius: 4px;
+}
+.months {
+  height: 30px;
+  padding: 6px 55px;
   font-size: 14px;
   line-height: 1.42857143;
   color: #000;
