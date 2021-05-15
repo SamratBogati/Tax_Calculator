@@ -108,7 +108,7 @@
         <div class="form-row">
           <div class="form-row-3">
             <div class="form-column-1">
-              <button class="button-1" value="reset">
+              <button class="button-1" value="reset" type="reset">
                 Reset
               </button>
             </div>
