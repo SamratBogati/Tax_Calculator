@@ -32,6 +32,9 @@ if ($action == 'save_image') {
 		echo $save;
 }
 if ($action == 'save_post') {
+	$save = $crud->save_post();
+	if($save)
+		echo $save;
 }
 if ($action == 'delete_post') {
 }
