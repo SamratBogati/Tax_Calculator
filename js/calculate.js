@@ -7,11 +7,11 @@ function calculateTax(event){
   var providentFund = document.getElementById("provident-fund").value;
   var trust = document.getElementById("trust").value;
   var insurance = document.getElementById("insurance").value;
-  var income = monthlySalary + monthlyBonus - providentFund - trust - insurance;
-  console.log("Total Income: " + income);
+  var incomeTotal = monthlySalary - ( -monthlyBonus) - providentFund - trust - insurance;
+  
   if (status == "Married") {
       if(months == "yearly"){
-        income = 12 *(monthlySalary + monthlyBonus - providentFund - trust - insurance);
+        income = 12 *(incomeTotal);
         if (income > 2000000) {
           tax = 444000 + ((income - 2000000) * 36) / 100;
         } else if (income <= 2000000 && income > 700000) {
@@ -24,7 +24,7 @@ function calculateTax(event){
           tax = (income * 1) / 100;
         }
       }else if(months == "monthly"){
-        income = 12 *(monthlySalary + monthlyBonus - providentFund - trust - insurance);
+        income = 12 *(incomeTotal);
         if (income > 2000000) {
           tax = 444000 + ((income - 2000000) * 36) / 100;
         } else if (income <= 2000000 && income > 700000) {
@@ -40,8 +40,8 @@ function calculateTax(event){
       }
       } else{
         if(months == "yearly"){
-          income = 12 *(monthlySalary + monthlyBonus - providentFund - trust - insurance);
-          if (income > 2000000) {
+        income = 12 *(incomeTotal);
+         if (income > 2000000) {
             tax = 429500 + ((income - 2000000) * 36) / 100;
           } else if (income <= 2000000 && income > 750000) {
             tax = 54500 + ((income - 750000) * 30) / 100;
@@ -53,7 +53,7 @@ function calculateTax(event){
             tax = (income * 1) / 100;;
           }
         } else if(months == "monthly"){
-          income = 12 *(monthlySalary + monthlyBonus - providentFund - trust - insurance);
+          income = 12 *(incomeTotal);
           if (income > 2000000) {
             tax = 429500 + ((income - 2000000) * 36) / 100;
           } else if (income <= 2000000 && income > 750000) {
