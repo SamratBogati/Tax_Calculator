@@ -87,7 +87,7 @@
                 <input id="bonus" type="number" min="0" />
               </div>
             </div>
-<!--             Total Salary has been remove -->
+            <!--             Total Salary has been remove -->
             <div class="form-row-2">
               <h2>Deduction</h2>
               <div class="form-group">
@@ -123,11 +123,11 @@
           <div class="form-row-2">
             <div class="form-group">
               <label>Net Tax Liability (yearly):</label>
-              <input type="number" id="yearly-tax" />
+              <input type="text" id="yearly-tax" />
             </div>
             <div class="form-group">
               <label>Net Tax Liability (monthly):</label>
-              <input type="number" id="monthly-tax" />
+              <input type="text" id="monthly-tax" />
             </div>
           </div>
         </div>
