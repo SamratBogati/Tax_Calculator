@@ -87,6 +87,7 @@
                 <input id="bonus" type="number" min="0" />
               </div>
             </div>
+            //Total Salary has been remove
             <div class="form-row-2">
               <h2>Deduction</h2>
               <div class="form-group">
