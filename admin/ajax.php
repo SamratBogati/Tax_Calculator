@@ -37,5 +37,8 @@ if ($action == 'save_post') {
 		echo $save;
 }
 if ($action == 'delete_post') {
+	$delete = $crud->delete_post();
+	if($delete)
+		echo $delete;
 }
 ob_end_flush();
