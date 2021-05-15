@@ -36,7 +36,7 @@
           </div>
           <div class="row">
             <!-- /.col -->
-            <button onclick="location.href='home.php'" type="button" class="form__button2">
+            <button onclick="location.href='../Main Page/Home.php'" type="button" class="form__button2">
               Cancel
             </button>
         </form>
